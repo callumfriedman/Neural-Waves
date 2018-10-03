@@ -3,7 +3,7 @@
 This program simulates the propagation of electro-chemical waves down an axon that connects nerves together. A single axon is assumed to be very thin and long, and therefore one-dimensional.
 
 More specifically, the simulation is of the *membrane potential u(x, t)* and the *recovery variable v(x, t)*, as functions 
-of distance along the axon *x*, in the domain [*0*, *L*], and time *t*, in the domain [*0*, *t<sub>f</sub>*]. A centred finite difference scheme is used to solve the following equations:
+of distance along the axon *x*, in the domain [0, *L*], and time *t*, in the domain [0, *t<sub>f</sub>*]. A centred finite difference scheme is used to solve the following equations:
 
 ![](http://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20v%7D%7B%5Cpartial%20t%7D%20%3D%20%5Cfrac%7B%5Cpartial%5E2%20v%7D%7B%5Cpartial%20x%5E2%7D&plus;f%28v%29-u)
 
@@ -17,7 +17,9 @@ The boundary conditions are
 
 and 
 
-![](http://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20v%7D%7B%5Cpartial%20x%7D%5Cbiggr%5Crvert_%7BX%3DL%7D%3D0) (for all *t*).
+![](http://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20v%7D%7B%5Cpartial%20x%7D%5Cbiggr%5Crvert_%7BX%3DL%7D%3D0) 
+
+(for all *t*).
 
 
 The program was written with reference to the following specification:
@@ -48,9 +50,8 @@ The program will compile with:
 gcc q4.c -Wall -Werror -std=c99 -lm
 ```
 
-To visualise the output, run the Matlab file, 'plotter.m'.
+To visualise the output over time, run the Matlab file, 'plotter.m'.
 
 
 ## Acknowledgments
-
-* This program was for an academic assignment created by Prof. B. McMillan, Department of Physics, University of Warwick.
+This program was for an academic assignment created by Prof. B. McMillan, Department of Physics, University of Warwick.
