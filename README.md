@@ -3,9 +3,24 @@
 This program simulates the propagation of electro-chemical waves down an axon that connects nerves together. A single axon is assumed to be very thin and long, and therefore one-dimensional.
 
 More specifically, the simulation is of the *membrane potential u(x, t)* and the *recovery variable v(x, t)*, as functions 
-of distance along the axon *x*, in the domain [*0*, *L*], and time *t*, in the domain [*0*, *t<sub>f</sub>*].
+of distance along the axon *x*, in the domain [*0*, *L*], and time *t*, in the domain [*0*, *t<sub>f</sub>*]. A centred finite difference scheme is used to solve the following equations:
 
-The following specification was used:
+![](http://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20v%7D%7B%5Cpartial%20t%7D%20%3D%20%5Cfrac%7B%5Cpartial%5E2%20v%7D%7B%5Cpartial%20x%5E2%7D&plus;f%28v%29-u)
+
+where ![](http://latex.codecogs.com/gif.latex?f%28v%29%3Dv%28%5Calpha%20-v%29%28v-1%29)
+
+![](http://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20u%7D%7B%5Cpartial%20t%7D%3D%5Cbeta%20v)
+
+The boundary conditions are 
+
+![](http://latex.codecogs.com/gif.latex?v%280%2Ct%29%3DAsin%28%5Comega%20t%29&plus;v_0) 
+
+and 
+
+![](http://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20v%7D%7B%5Cpartial%20x%7D%5Cbiggr%5Crvert_%7BX%3DL%7D%3D0) (for all *t*).
+
+
+The program was written with reference to the following specification:
 
 **Specification:**
 The *x* grid has *N* grid points, including the end of the domain, *i.e.,* between *x<sub>0</sub>=0* to *x<sub>N-1</sub>=L*.
