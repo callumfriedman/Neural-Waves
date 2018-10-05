@@ -3,6 +3,11 @@
 This program simulates the propagation of electro-chemical waves down an axon that connects nerves together.
 
 ## Getting Started
+
+### Prerequisites
+* C development environment
+* (Optional) MATLAB; to visualise the output data over time
+
 To run this program, you must set up a C development environment on your machine. There are two main ways to do this:
 1. Using an IDE (Integrated Development Environment), see https://fresh2refresh.com/c-programming/c-environment-setup/
 2. Using a GCC compiler, see https://fresh2refresh.com/c-programming/c-environment-setup-using-gcc/
@@ -10,9 +15,6 @@ To run this program, you must set up a C development environment on your machine
 I personally prefer using the GCC method, but it is entirely up to you!
 
 Once you have a C development environment, simply download the files from this repository.
-
-### Prerequisites
-* MATLAB; to visualise the output data over time
 
 ## Running the program
 
