@@ -18,10 +18,16 @@ Once you have a C development environment, simply download the files from this r
 
 You can run the program by loading the file 'q4.c' in your IDE, and then clicking 'Compile and Run'.
 
-Alternatively you can compile it in a GCC compiler using the command:
+Alternatively you can compile it in a GCC compiler using the command
 
 ```
 gcc q4.c -Wall -Werror -std=c99 -lm
+```
+
+Then, export the output data to a .csv file using the command
+
+```
+./a.out>output.csv
 ```
 
 Finally, using MATLAB, you can visualise the output data by running the file 'plotter.m'.
