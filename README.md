@@ -26,7 +26,9 @@ Alternatively you can compile it in a GCC compiler using the command
 gcc nwaves.c -Wall -Werror -std=c99 -lm
 ```
 
-Then, export the output data to a csv file called 'output.csv', using the command
+The time, *t*, *x*-coordinate and the values of *u(x, t)* and *v(x, t)* are written in a single output line for each gridpoint, at each output time.
+
+To visualise the data, first export the output to a csv file called 'output.csv', using the command
 
 ```
 ./a.out>output.csv
