@@ -34,7 +34,7 @@ To visualise the data, first export the output to a csv file called 'output.csv'
 ./a.out>output.csv
 ```
 
-Finally, using MATLAB, you can visualise the output data by running the file 'plotter.m'.
+Finally, using MATLAB, you can visualise the output data by running the file 'plotresponse.m'.
 
 ## How does it work?
 
